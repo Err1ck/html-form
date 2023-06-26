@@ -1,0 +1,66 @@
+<!--
+  Create a registration form. The form should have the following fields:
+* Email
+* Password
+* Name and Lastname
+* Date of birth
+* Telephone number
+* A select for choosing plans: free plan, a group of 3 plans with increasing price, and a checkbox for a Pro Plan
+* Credit card number
+* CVC
+* Expiration date
+* Billing Address
+-->
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Html Form</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="email">Email</label>
+      <input id="email" name="form-email" type="email">
+      <label for="password" >Password</label>
+      <input id="password" name="form-password" type="password">
+      <label for="name">Name</label>
+      <input id="name" name="form-name" type="text">
+      <label for="lastname">Lastname</label>
+      <input id="lastname" name="form-lastname" type="text">
+      <label for="dbirth">Date of birth</label>
+      <input id="dbirth" name="form-dbirth" type="date">
+      <label for="tel">Telephone number</label>
+      <input id="tel" name="form-tel" type="number">
+      <label for="plan">Select for choosing plans</label>
+      <select id="plan" name="select-for-choosing_plans">
+            <option value="0"><b>Free plan</b></option>
+            <optgroup label="Monthly">
+              <option value="479">4.79$</option>
+              <option value="1579">15.79$</option>
+              <option value="1979">19.79$</option>
+            </optgroup>  
+      </select>
+      <label for="pro">Pro Plan</label>
+      <input id="pro" name="form-pro" type="checkbox">
+      <label for="card">Credit card number</label>
+      <input id="card" name="form-card" type="text" maxlength="16" minlength="16">
+      <label for="cvc">CVC</label>
+      <input id="cvc" name="form-cvc" type="text" maxlength="3" minlength="3">
+      <label for="expdate">Expiration date</label>
+      <input id="expdate" name="form-expiration" type="date">
+      <label for="address">Billing Address</label>
+      <input id="address" name="form-address" type="text">
+    </form>
+    <button type="submit">Send</button>
+  </body>
+</html>
